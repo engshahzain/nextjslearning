@@ -29,7 +29,8 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts",
-    "app/Components/Common/Logo.jsx"
+    "app/Components/Common/Logo.jsx",
+    "app/Components/Common/Navbar.jsx"
   ],
   "exclude": ["node_modules"]
 }
