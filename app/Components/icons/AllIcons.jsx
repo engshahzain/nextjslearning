@@ -3,8 +3,10 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { MdHome } from "react-icons/md";
-
+import { SiReaddotcv } from "react-icons/si";
 import { MdOutlineFileDownload } from "react-icons/md";
+import { MdOutlineWorkOutline } from "react-icons/md";
+import { RiContactsBook3Line } from "react-icons/ri";
 import Image from "next/image";
 export const FbIcon = () => {
   return <FaFacebookF />;
@@ -49,4 +51,13 @@ export const DownlodeIcon = () => {
 };
 export const HomeIcon = () => {
   return <MdHome />;
+};
+export const ResumeIcon = () => {
+  return <SiReaddotcv />;
+};
+export const WorkIcon = () => {
+  return <MdOutlineWorkOutline />;
+};
+export const ContactIcon = () => {
+  return <RiContactsBook3Line />;
 };
