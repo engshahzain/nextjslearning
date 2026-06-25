@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en" className={` h-full antialiased`}>
       <body className={`min-h-full ${raleway.className}`}>
         <Header />
-        <main className="flex gap-10 w-full  container mx-auto py-5">
+        <main className="flex gap-10 w-full items-stretch  container mx-auto py-5">
           <UserProfile />
           <div className="w-full">
             <Navbar />

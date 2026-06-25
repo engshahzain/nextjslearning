@@ -5,7 +5,7 @@ import { ContactIcon, HomeIcon, ResumeIcon, WorkIcon } from "../icons/AllIcons";
 const inter = Inter({ subsets: ["latin"] });
 const Navbar = () => {
   return (
-    <header className="w-full flex justify-end">
+    <header className="w-full flex justify-end mb-5">
       <nav className="inline-block px-5 py-3 bg-[#F2F7FC]   border border-[#1a10035b] rounded-[20px]">
         <div className="flex gap-10">
           {" "}
@@ -19,36 +19,36 @@ const Navbar = () => {
             <span className="text-[12px] font-semibold">Home</span>
           </Link>
           <Link
-            href={"/"}
+            href={"/resume"}
             className="flex flex-col items-center bg-[#E1E8EF] hover:bg-gradient-to-r hover:from-[#FFA012] hover:to-[#E61905] hover:opacity-90 transition-colors duration-150 ease-out text-[#FFFFFF]  rounded-[20px] p-4 group"
           >
             <span className="text-2xl text-[#1a10037c] group-hover:text-[#F2F7FC] transition-colors duration-150 ease-out rotate-[-10deg]">
               <ResumeIcon />
             </span>
             <span className="text-[12px] font-semibold text-[#000000] group-hover:text-[#F2F7FC] transition-colors duration-150 ease-out">
-              Home
+              Resume
             </span>
           </Link>
           <Link
-            href={"/"}
+            href={"/portfolio"}
             className="flex flex-col items-center bg-[#E1E8EF] hover:bg-gradient-to-r hover:from-[#FFA012] hover:to-[#E61905] hover:opacity-90 transition-colors duration-150 ease-out text-[#FFFFFF]  rounded-[20px] p-4 group"
           >
             <span className="text-2xl text-[#1a10037c] group-hover:text-[#F2F7FC] transition-colors duration-150 ease-out">
               <WorkIcon />
             </span>
             <span className="text-[12px] font-semibold text-[#000000] group-hover:text-[#F2F7FC] ">
-              Home
+              Work
             </span>
           </Link>
           <Link
-            href={"/"}
+            href={"/contact"}
             className="flex flex-col items-center bg-[#E1E8EF] hover:bg-gradient-to-r hover:from-[#FFA012] hover:to-[#E61905] hover:opacity-90 transition-colors duration-150 ease-out text-[#FFFFFF]  rounded-[20px] p-4 group"
           >
             <span className="text-2xl text-[#1a10037c] group-hover:text-[#F2F7FC] transition-colors duration-150 ease-out">
               <ContactIcon />
             </span>
             <span className="text-[12px] font-semibold text-[#000000] group-hover:text-[#F2F7FC] transition-colors duration-150 ease-out ">
-              Home
+              Contact
             </span>
           </Link>
         </div>

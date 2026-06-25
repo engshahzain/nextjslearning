@@ -13,7 +13,7 @@ import {
 import Link from "next/link";
 const UserProfile = () => {
   return (
-    <div className="w-full max-w-sm flex flex-col items-center justify-between">
+    <div className="w-full max-w-sm flex flex-col items-center mt-10">
       {/* profile image  */}
       <div className="w-full relative z-10 max-w-40 h-40 rounded-2xl overflow-hidden">
         <Image
@@ -25,9 +25,9 @@ const UserProfile = () => {
           alt="Engr Muhammad Shahzain Profile Image"
         />
       </div>
-      <div className="bg-[#FFFF] w-full -mt-20 overflow-hidden rounded-[20px] ">
+      <div className="bg-[#FFFF] w-full flex-1 -mt-20 overflow-hidden rounded-[20px] pb-10">
         <div className="w-full  h-20  relative z-0 "></div>
-        <div className="flex flex-col items-center justify-center w-full mt-2">
+        <div className="flex flex-col items-center justify-center w-full mt-3">
           {/* name  */}
           <h1 className="text-[#0B0909] font-bold text-xl text-center">
             Engr.Muhammad Shahzain
@@ -66,8 +66,8 @@ const UserProfile = () => {
 
           {/* personal details  */}
 
-          <div className="bg-[#F2F7FC] w-full max-w-[90%] mx-auto py-10">
-            <div className="flex items-center gap-5 w-full px-8 py-5 border-[#E3E3E3] border-b ">
+          <div className="bg-[#F2F7FC] w-full max-w-[90%] mx-auto py-10 mt-5">
+            <div className="flex items-center gap-5 w-full px-8 py-5 pb-8 border-[#E3E3E3] border-b ">
               <div className="icon w-3">
                 <PhoneIcon />
               </div>
@@ -81,7 +81,7 @@ const UserProfile = () => {
                 </span>
               </div>
             </div>
-            <div className="flex items-center gap-5 w-full px-8 py-5 border-[#E3E3E3] border-b ">
+            <div className="flex items-center gap-5 w-full px-8 py-5 pb-8 border-[#E3E3E3] border-b ">
               <div className="icon w-5  shrink-0">
                 <EmailIcon />
               </div>
@@ -91,11 +91,11 @@ const UserProfile = () => {
                   Email
                 </span>
                 <span className="text-[#000000] text-[14px] leading-none font-semibold">
-                  engineermuhammadshahzain@gmail.com
+                  engmuhammadshahzain@gmail.com
                 </span>
               </div>
             </div>
-            <div className="flex items-center gap-5 w-full px-8 py-5 border-[#E3E3E3] border-b ">
+            <div className="flex items-center gap-5 w-full px-8 py-5 pb-8 border-[#E3E3E3] border-b ">
               <div className="icon w-5">
                 <LocationIcon />
               </div>
@@ -111,7 +111,7 @@ const UserProfile = () => {
             </div>
             <Link
               href={"/"}
-              class="flex items-center gap-2 mt-6 w-full max-w-[70%] mx-auto px-6 py-3 text-white font-medium rounded-full bg-gradient-to-r from-[#FFA012] to-[#E61905] hover:opacity-90 transition-opacity"
+              class="flex items-center gap-2  w-full max-w-[70%] mx-auto px-6 py-3 text-white font-medium rounded-full bg-gradient-to-r from-[#FFA012] to-[#E61905] hover:opacity-90 transition-opacity mt-10"
             >
               <svg
                 class="w-5 h-5"
