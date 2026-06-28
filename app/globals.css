@@ -11,4 +11,30 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ebf2fa;
+  overflow-x: hidden;
+}
+.home {
+  animation: page-animation 0.3s linear forwards;
+}
+
+.contact {
+  animation: page-animation 0.3s linear forwards;
+}
+.resume {
+  animation: page-animation 0.3s linear forwards;
+}
+.portfolio {
+  animation: page-animation 0.3s linear forwards;
+}
+
+@keyframes page-animation {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

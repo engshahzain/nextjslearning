@@ -88,8 +88,13 @@ const Card = ({
           </div>
         )}
         {phoneNumber && (
-          <span className="text-[#000000] font-medium text-[14px]">
+          <span className="text-[#000000] font-medium text-[14px] pl-10">
             {phoneNumber}
+          </span>
+        )}
+        {email && (
+          <span className="text-[#000000] font-medium text-[14px] pl-10">
+            {email}
           </span>
         )}
       </div>

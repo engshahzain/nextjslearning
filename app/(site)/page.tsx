@@ -8,26 +8,28 @@ import {
   ShopifyIcon,
   WebIcon,
 } from "./Components/icons/AllIcons";
+
 const poppin = Poppins({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-raleway",
 });
+
 export const metadata: Metadata = {
   title: "Shahzain Portfolio",
-  description: " Muhammad Shahzain Portfolio  in Next js",
+  description: "Muhammad Shahzain Portfolio in Next.js",
 };
 
 export default function Home() {
   return (
-    <div className="w-full flex-1 bg-[#FFFFFF] px-20 py-8  rounded-[20px] ">
-      {/* heading with text section  */}
+    // Responsive padding: px-6 on mobile, lg:px-20 on desktop
+    <div className="home w-full flex-1 bg-[#FFFFFF] px-6 sm:px-10 lg:px-20 py-8 rounded-[20px] shadow-sm">
       <section>
-        <div className="flex gap-12 items-center">
+        <div className="flex gap-4 sm:gap-12 items-center flex-wrap">
           <Heading>About</Heading>
-          <span className="h-0.5 w-62 block  bg-gradient-to-r from-[#FFA012] to-[#E61905]"></span>
+          <span className="h-0.5 w-32 sm:w-62 block bg-gradient-to-r from-[#FFA012] to-[#E61905]"></span>
         </div>
-        <p className="py-8 font-medium text-[16px]">
+        <p className="py-6 sm:py-8 font-medium text-[14px] sm:text-[16px]">
           Hello there! I'm thrilled to welcome you to my portfolio. I am a
           passionate and versatile full-stack developer with a keen interest in
           exploring the latest cutting-edge technologies. My journey in the
@@ -36,14 +38,15 @@ export default function Home() {
           the industry.
         </p>
       </section>
-      {/* what i do section  skill section */}
+
       <section>
         <Heading>What I do!</Heading>
-        <div className="card-wrapper grid  grid-cols-2 gap-x-8 gap-y-8 mt-5">
+        {/* Changed grid-cols-2 to grid-cols-1 md:grid-cols-2 */}
+        <div className="card-wrapper grid grid-cols-1 md:grid-cols-2 gap-x-6 lg:gap-x-8 gap-y-6 lg:gap-y-8 mt-5">
           <Card
             mainheading={"Frontend Web Development"}
             pg={
-              "As a frontend developer, I enjoy creating responsive and user-friendly interfaces. I’m passionate about building modern web experiences that are fast, accessible, and visually appealing."
+              "As a frontend developer, I enjoy creating responsive and user-friendly interfaces..."
             }
             icon={<WebIcon />}
             iconwidth={"w-[24px]"}
@@ -52,7 +55,7 @@ export default function Home() {
           <Card
             mainheading={"Shopify Theme Development"}
             pg={
-              "As a developer, I enjoy building modern and responsive Shopify themes. I’m passionate about creating fast, user-friendly, and visually appealing e-commerce stores while exploring new ways to enhance the shopping experience."
+              "As a developer, I enjoy building modern and responsive Shopify themes..."
             }
             icon={<ShopifyIcon />}
             iconwidth={"w-[24px]"}
@@ -61,7 +64,7 @@ export default function Home() {
           <Card
             mainheading={"Backend Development"}
             pg={
-              "As a backend developer, I enjoy building scalable and efficient server-side applications using Node.js, Express, and MongoDB. I'm passionate about creating secure APIs and robust systems that power modern web applications."
+              "As a backend developer, I enjoy building scalable and efficient server-side applications..."
             }
             icon={<BackendIcon />}
             iconwidth={"w-[24px]"}
@@ -70,7 +73,7 @@ export default function Home() {
           <Card
             mainheading={"Full-Stack Web Development"}
             pg={
-              "As a MERN stack developer, I enjoy turning ideas into complete web applications. From designing interfaces to building APIs and databases, I love developing end-to-end solutions."
+              "As a MERN stack developer, I enjoy turning ideas into complete web applications..."
             }
             icon={<FullStackIcon />}
             iconwidth={"w-[24px]"}
