@@ -8,22 +8,39 @@ const poppin = Poppins({
   variable: "--font-poppins",
 });
 
+interface CardProps {
+  icon?: React.ReactNode;
+  iconwidth?: string;
+  mainheading?: string;
+  pg?: string;
+  date?: string;
+  text1?: string;
+  text2?: string;
+  mainImage?: string;
+  imagetext?: string;
+  imageSubtext?: string;
+  imageAlt?: string;
+  phoneNumber?: string;
+  email?: string;
+  className?: string;
+}
+
 const Card = ({
-  icon = null,
+  icon,
   iconwidth = "",
-  mainheading = null,
-  pg = null,
-  date = null,
-  text1 = null,
-  text2 = null,
-  mainImage = null,
-  imagetext = null,
-  imageSubtext = null,
-  imageAlt = null,
-  phoneNumber = null,
-  email = null,
+  mainheading,
+  pg,
+  date,
+  text1,
+  text2,
+  mainImage,
+  imagetext,
+  imageSubtext,
+  imageAlt = "",
+  phoneNumber,
+  email,
   className = "",
-}) => {
+}: CardProps) => {
   return (
     <div className={`${className} px-5 py-3 rounded-[10px]`}>
       <div className="card-wrapper">
